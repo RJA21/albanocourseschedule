@@ -1,0 +1,104 @@
+/* MARGIN PADDING */
+body, h3, table, th, td, p, a, .lab {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center all text */
+body, h3, p, a {
+    text-align: center;
+}
+
+/* Define Arial font for body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Set custom colors */
+body {
+    background-color: beige; 
+    color: #333; 
+}
+
+/* Style table */
+table {
+    width: 85%;
+    margin: 0 auto;
+    border-collapse: collapse; 
+    border: 2px solid transparent; 
+}
+
+th, td {
+    padding: 8px;
+    border: 5px solid #000; /* black border for cells */
+    border-style: groove;
+}
+
+th {
+    background-color: #000; 
+    color: #fff; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Define different background and text colors for courses */
+.subject-pe {
+    background-color: #ff9999; 
+}
+
+.subject-itep {
+    background-color: #99ff99; 
+}
+
+.subject-gec {
+    background-color: #cc99ff; 
+}
+
+.subject-programming {
+    background-color: #99ccff; 
+}
+
+.subject-multimedia {
+    background-color: #ffff99; 
+}
+
+.subject-webdev {
+    background-color: #ffcc99; 
+}
+
+.subject-database {
+    background-color: #ccffff; 
+}
+.subject-networking {
+    background-color: pink; 
+}
+
+/* Styling for unused cells */
+td:empty {
+    background-color: inherit;
+}
+
+/* Styling for lab descriptor */
+.lab {
+    font-style: italic;
+}
+
+/* Set column widths */
+th:first-child,
+td:first-child {
+    width: 10%;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+    width: 15%;
+}
+
+/* Media query for print mode */
+@media print {
+    body {
+        background-color: #fff; 
+        color: #000; 
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
